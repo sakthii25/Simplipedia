@@ -21,3 +21,7 @@ st.text("Simplipedia is used to explains the hard topics in a simple manner.\n")
 topic = st.text_input("Enter the topic: ")
 if topic:
     st.write(getresponse(topic))
+link = "https://docs.google.com/forms/d/e/1FAIpQLSfwFzEbKYFAHe3M2XYrBYYBAf0z1T2GGvD0T1dB2RQdlzoarw/viewform?usp=sf_link"
+button_label = "Feedback"
+if(st.button(button_label)):
+    st.markdown(f'<a href = "{link}" target = "_blank">{button_label}</a>',unsafe_allow_html=True)
